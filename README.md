@@ -35,5 +35,3 @@ const chatId = env.TELEGRAM_CHAT_ID;
 
 text
 https://telegram-bot-worker.<your-username>.workers.dev
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
