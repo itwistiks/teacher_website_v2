@@ -14,7 +14,7 @@
             <h1>Подготовка к ОГЭ и ЕГЭ по физике</h1>
             <p>Индивидуальные занятия с опытным преподавателем</p>
             <div>
-                <a href="#programs" class="price-tag">Индивидуальные занятия от: 1 700 ₽ / 55 мин</a>
+                <a href="#programs" class="price-tag">Индивидуальные занятия от: 1 750 ₽ / 55 мин</a>
                 <!--<a href="#programs" class="price-tag">Мини-группа (3-5 чел): 1000₽/55 мин</a>-->
             </div>
         </div>
@@ -38,23 +38,8 @@
     <!-- Третий блок - Программы -->
     <section class="programs" id="programs">
         <h2>Программы подготовки</h2>
-        <div class="program-cards">
-			<div class="program-card">
-                <h3>Средняя школа</h3>
-                <ul>
-                    <li>Качественное изучение тем</li>
-                    <li>Решение домашних заданий</li>
-                    <li>Подготовка к вступительным испытаниям</li>
-                    <li>Физические эксперименты</li>
-					<li>Разбор сложных заданий</li>
-                    <li>Лайт-курс к ОГЭ включен</li>
-                </ul>
-                <div class="price">1 750 ₽ / занятие</div>
-                <a href="#contact" class="btn">Записаться</a>
-            </div>
-                 
+        <div class="program-cards">       
             <!-- Лайт-курс к ОГЭ -->
-
             <div class="program-card light-course">
                 <div class="popular-label">★ Популярная новинка</div>
                 <h3>Лайт-курс к ОГЭ</h3>
@@ -90,48 +75,15 @@
                             Платформа находится в телеграме 
                             <br>
                             Доступ 24/7 к материалам и задачам
+                            <br>
+                            Ловит даже на парковке
                         </p>
                     </div>
                 </div>
-                
-                
                 <div class="price">1 950 ₽ / месяц</div>
                 <a href="#contact" class="btn highlight-btn">Записаться</a>
                 <button class="details-btn">Узнать больше ▼</button>
             </div>
-            
-
-
-            <div class="program-card">
-                <h3>ОГЭ</h3>
-                <ul>
-                    <li>Полный курс школьной программы</li>
-                    <li>Разбор всех типов задач ОГЭ</li>
-                    <li>Домашние задания</li>
-                    <li>Пробные тестирования</li>
-                    <li>Физические эксперименты</li>
-                    <li>Лайт-курс к ОГЭ включен</li>
-                </ul>
-                <div class="price">2 000 ₽ / занятие</div>
-                <a href="#contact" class="btn">Записаться</a>
-            </div>
-
-			<!-- Мест нет -->
-			<div class="program-card ege-full">
-                <div class="full-label">Мест нет</div>
-                <h3>ЕГЭ</h3>
-                <ul>
-                    <li>Систематизация знаний</li>
-                    <li>Фундаментальные понятия</li>
-                    <li>Решение типовых задач 1 и 2 части</li>
-                    <li>Разбор распространенных ошибок</li>
-                    <li>Олимпиадные методы</li>
-                </ul>
-                <div class="price">2 500 ₽ / занятие</div>
-                <a href="#contact" class="btn disabled">Запись закрыта</a>
-            </div>
-
-
         </div>
     </section>
     
@@ -203,11 +155,8 @@
                     <div class="form-group">
                         <label for="program">Программа</label>
                         <select id="program" name="program" required>
-                            <option value="11" disabled>ЕГЭ (мест нет)</option>
-                            <option value="0">Лайт-курс ОГЭ (новинка)</option>
-                            <option value="9">9 класс (ОГЭ)</option>
-                            <option value="8">8 класс</option>
-							<option value="7">7 класс</option>
+                            <option value="" disabled selected>Выберите программу</option>
+                            <!-- Опции будут добавлены динамически -->
                         </select>
                     </div>
 
@@ -259,6 +208,7 @@
         <p>© 2025 Подготовка к ОГЭ по физике. Все права защищены.</p>
     </footer>
     
+    <script src="../static/js/programs.js"></script>
     <script src="../static/js/stars.js"></script>
 	<script src="../static/js/scrollBehavior.js"></script>
     <script src="../static/js/form.js"></script>

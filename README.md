@@ -1,14 +1,15 @@
 Как загрузить свой сайт в Интернет?(На хостинг)
 https://www.youtube.com/watch?v=Hee8I1Owvzg&t=357s
 
-
+const botToken = '8435543532:AAGfUkUm2FguwDsdJB5fp5s6U4YaN_oQ9X8';
+const chatId = '994189833';
 
 Необходимо зайти в form.js и изменить необходимое по инструкции. Также взаимодействие будет происходить в worker.js
 
 1. Настройка Cloudflare Worker
-https://dash.cloudflare.com/794125c2dbcce20d8eadde0fb4bb41f8/home
-Шаг 1: Создайте Worker в Cloudflare
-Зайдите в Cloudflare Dashboard.
+   https://dash.cloudflare.com/794125c2dbcce20d8eadde0fb4bb41f8/home
+   Шаг 1: Создайте Worker в Cloudflare
+   Зайдите в Cloudflare Dashboard.
 
 В боковом меню выберите Workers & Pages → Create application → Worker.
 

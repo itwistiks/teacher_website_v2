@@ -1,5 +1,31 @@
 document.getElementById('telegramForm').addEventListener('submit', async function(e) {
     e.preventDefault();
+    // Проверка доступности программы
+    const programSelect = document.getElementById('program');
+    const selectedValue = programSelect.value;
+    
+    try {
+        const response = await fetch('static/data/programs.json');
+        const data = await response.json();
+        const selectedProgram = data.programs.find(p => p.form_value === selectedValue);
+        
+        if (selectedProgram && (selectedProgram.disabled || !selectedProgram.available)) {
+            alert('Выбранная программа временно недоступна для записи');
+            return;
+        }
+    } catch (error) {
+        console.error('Error checking program:', error);
+    }
+
+    // Проверка доступности программы
+    const selectedProgram = programSelect.value;
+    const programs = await fetch('../static/data/programs.json').then(res => res.json());
+    const programData = programs.programs.find(p => p.id === selectedProgram);
+    
+    if (programData && !programData.available) {
+        alert('Выбранная программа временно недоступна для записи');
+        return;
+    }
 
 	// Проверка капчи
 	if (!window.simpleCaptcha || !window.simpleCaptcha.validate()) {
@@ -62,8 +88,8 @@ ${formData.get('message') ? escapeHtml(formData.get('message')) : 'нет инф
 		/* Верхнее необходимо будет заменить от сюда (вроде) ---->*/
 
         // Ваши данные бота
-        const botToken = 'Bot_Token';
-        const chatId = 'My_Chat_Id';
+        const botToken = '8435543532:AAGfUkUm2FguwDsdJB5fp5s6U4YaN_oQ9X8';
+        const chatId = '994189833';
         
         // Отправляем в Telegram
         const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
